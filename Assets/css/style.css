@@ -8,36 +8,44 @@ body {
     background-color: #d9dcd6;
 }
 
-.header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
-}
-
-.header h1 {
-    display: inline-block;
-    font-size: 48px;
-}
-
-.header h1 .seo {
-    color: #d9dcd6;
-}
-
-.header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
+/* transferred font family statement from the ".header div" selector, and changed this from a class selector to an element selector */
+header {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+    color: #ffffff;
+    background-color: #2a607c;
+    padding: 20px;
 }
 
-.header div ul {
+/* because the element selector does not override these values for the individual elements, I created this heading class to apply to each element in the header*/
+.heading {
+    /* due to the div element being parsed out, there were multiple sections targeting the header, so that code was reorganized to this class selector */
+    padding-top: 15px;
+    margin-right: 20px;
+    /* added this declaration to remove the default block display from all header elements */
+    display: inline;
+}
+
+/* to reduce redunadnacy, removed the header h1 selector and put applicable declarations in the seo class selector*/
+
+/* to reduce redunadnacy, removed portions of the class selector */
+.seo {
+    color: #d9dcd6;
+    font-size: 48px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* to reduce redunadnacy, changed this from a class selector to element selector */
+/* removed the "div" part of the selector, as it was removed from the code */
+header ul {
     list-style-type: none;
+    /* taken from a previous class selector */
+    float: right;
 }
 
-.header div ul li {
-    display: inline-block;
+/* to reduce redunadnacy, changed this from a class selector to element selector */
+/* removed the "div" part of the selector, as it was removed from the code */
+header ul li {
     margin-left: 25px;
 }
 
