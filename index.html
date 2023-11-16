@@ -4,17 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- created a succinct title -->
     <title>Horiseon Marketing Solutions</title>
 </head>
 
 <body>
-    <!-- reorganized the "div soup", utilizing the header, footer, and section elements -->
-    <!-- removed the header class, as it became redundant -->
     <header>
-        <!-- removed the "span" element, as it is not semantic -->
-        <h1 class="heading seo">Horiseon</h1>
-        <!-- removed unnecessary section element -->
+        <h1 class="heading name">Horiseon</h1>
         <ul class="heading">
             <li class="heading">
                 <a href="#search-engine-optimization">Search Engine Optimization</a>
@@ -27,24 +22,25 @@
             </li>
         </ul>
     </header>
-    <!-- added alt attributes to all img elements -->
-    <section class="hero" alt="a large image separates the header from the content of the page. it depicts a man with an unbuttoned striped shirt standing at the table of a meeting. to his right, a man and a woman look at the papers the first man is pointing to. in the foreground, a man is grabbing ont of the papers. there are tall, cylindrical glasses of water for each person at the table, each mostly full. in the background, a whiteboard hung on a wall of wood with varying depths that ends on the left with a window."></section>
-    <section class="content">
-        <section class="search-engine-optimization">
+    
+    <section class="banner" alt="a large image separates the header from the content of the page. it depicts a man with an unbuttoned striped shirt standing at the table of a meeting. to his right, a man and a woman look at the papers the first man is pointing to. in the foreground, a man is grabbing ont of the papers. there are tall, cylindrical glasses of water for each person at the table, each mostly full. in the background, a whiteboard hung on a wall of wood with varying depths that ends on the left with a window."></section>
+
+    <section class="solutions-column">
+        <section class="solutions">
             <img src="./assets/images/search-engine-optimization.jpg" alt="an image of a deskspace with a cup of multicolored pens and pencils, a laptop keyboard, a cup of coffee, and a notebook with a sketch of an SEO thought bubble" class="float-left" />
             <h2>Search Engine Optimization</h2>
             <p>
                 The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
             </p>
         </section>
-        <section id="online-reputation-management" class="online-reputation-management">
+        <section id="online-reputation-management" class="solutions">
             <img src="./assets/images/online-reputation-management.jpg" alt="an image of a person working, with one hand on their laptop and one holding their phone. beside their laptop is a cup, and the laptop screen shows the word 'Reputation' in capital letters with multiple graphs and charts underneath" class="float-right" />
             <h2>Online Reputation Management</h2>
             <p>
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
             </p>
         </section>
-        <section id="social-media-marketing" class="social-media-marketing">
+        <section id="social-media-marketing" class="solutions">
             <img src="./assets/images/social-media-marketing.jpg" alt="a bird's eye view of a table where a meeting is taking place between six people, some of which have speach and thought bubbles reading 'MEDIA', 'SHARE', 'LIKE', and 'TWEET'. on the table lay the laptops and tablets that are in some of the people's hands, as well as logos of things relating to social media, such as a phone, a camera, a music note, a star, and a magnifying glass." class="float-left" />
             <h2>Social Media Marketing</h2>
             <p>
@@ -52,22 +48,23 @@
             </p>
         </section>
     </section>
-    <section class="benefits">
-        <section class="benefit-lead">
+
+    <section class="benefits-column">
+        <section class="benefit">
             <h3>Lead Generation</h3>
             <img src="./assets/images/lead-generation.png" alt="a monochromatic, flat image of a gear on top of a funnel that contains a down arrow, pointing in the direction of the spout of the funnel. under the funnel spout is a coin with a dollar symbol."/>
             <p>
                 Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
             </p>
         </section>
-        <section class="benefit-brand">
+        <section class="benefit">
             <h3>Brand Awareness</h3>
             <img src="./assets/images/brand-awareness.png" alt="a monochromatic, flat image of a lightbulb with a set of three curved lines to the left and right, each line in a set growing larger, imitating waves. under the lightbulb is a shirt and tie."/>
             <p>
                 Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
             </p>
         </section>
-        <section class="benefit-cost">
+        <section class="benefit">
             <h3>Cost Management</h3>
             <img src="./assets/images/cost-management.png" alt="a monochromatic, flat image of a gear, but the gear is cut off by three coins with dollar symbols at the gear's bottom half"/>
             <p>
@@ -75,6 +72,7 @@
             </p>
         </section>
     </section>
+
     <footer class="footer">
         <h2>Made with ❤️️ by Horiseon</h2>
         <p>
