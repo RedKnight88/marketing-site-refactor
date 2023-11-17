@@ -1,13 +1,20 @@
+/* This universal selector sets some default settings for all content.
+The border-box setting ensures even borders are contained within parent containers.
+The padding and margin settings remove all padding and margins from content boxes unless otherwise specified. */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* This sets the background of the entire webpage to a gray color. */
 body {
     background-color: #d9dcd6;
 }
 
+/* This establishes the style for the top navigation bar.
+This sets the font family, color, and size for all items within the header element.
+This sets the navigation bar color and how large the bar should be through the padding attribute.*/
 header {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
@@ -16,36 +23,53 @@ header {
     padding: 20px;
 }
 
+/* This establishes style for the unordered list in the top navigation bar.
+This sets the list to not contain bullet points, 
+and sets the entire list to position on the right side of the bar. */
 header ul {
     list-style-type: none;
     float: right;
 }
 
+/* This establishes style for unordered list items in the nav bar.
+This sets a margin to the left of each item. */
 header ul li {
     margin-left: 25px;
 }
 
+/* This establishes style for anchor link elements.
+This sets the text to remove the underline and color change from the text of the link, and sets color to white. */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* This establishes style for paragraph elements. It sets the font for all paragraph elements. */
 p {
     font-size: 16px;
 }
 
+/* This establishes style for the 'heading' class, which has been attached to each element in the nav bar.
+This increases the margin and padding room in specific areas around the content, and displays all 
+elements with this class as 'inline' so that there's no vertical change in the content display. */
 .heading {
     padding-top: 15px;
     margin-right: 20px;
     display: inline;
 }
 
+/* This establishes style for the 'name' class, which has been attached to the company name in the nav bar.
+This sets the color, size, and family for the font, which is overridden from the header element,
+in order to make it more prominent and distinct from the majority of text in the page. */
 .name {
     color: #d9dcd6;
     font-size: 48px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* This establishes style for the 'banner' class, which has been attached to the figure element, the first component of the body element.
+This sets the dimensions of the image and border of the content container. This also renders the image as part of the background
+of the webpage. The image is rendered, set to fill the content container, and aligned within the container. */
 .banner {
     height: 800px;
     width: 100%;
@@ -55,12 +79,35 @@ p {
     background-position: center;
 }
 
+/* This establishes style for the 'solutions-column' container, which has been attached to the main element.
+This sets how much of the width of the body element space the content will take, renders the contents inside as
+blocks that display inline - so the content can be given height and width values - and adds a slight margin. */
 .solutions-column {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* This establishes the style for the 'benefit' class, which has been attached to section elements
+within the main element. This sets margin and padding values, height for the content containers, font family
+and color, and the background color of the containers.*/
+.solutions {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* This establishes style for all 'img' elements within sections with the 'benefit' class. 
+This sets their maximum possible height for the scaled image.*/
+.solutions img {
+    max-height: 200px;
+}
+
+/* These two sections align the images in their respective classes to a specific side of the
+other content in the sections they reside in, and gives them a small margin for style. */
 .float-left {
     float: left;
     margin-right: 25px;
@@ -71,6 +118,17 @@ p {
     margin-left: 25px;
 }
 
+/* This establishes style for all 'h2' elements within sections with the 'solutions' class.
+This sets a margin below the headings and a font size for prominence. */
+.solutions h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* This establishes the style for the 'benefits-column' class, which has been attached to the aside element.
+This sets how much of the width and height of the body element space the content will take, ensures that other 
+content will not wrap around the container with the clear property, adds some padding and margin for positional style,
+and sets the font family and background color for the container. */
 .benefits-column {
     margin-right: 20px;
     padding: 20px;
@@ -82,40 +140,32 @@ p {
     background-color: #2589bd;
 }
 
+/* This establishes the style for the 'benefit' class, which has been attached to section elements within the
+aside element. This sets a margin at the end of each container and the text color within each to white. */
 .benefit {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
+/* This establishes style for all 'h3' elements within sections with the 'benefit' class.
+This sets an extra margin for these lines of content and aligns the text. */
 .benefit h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
+/* This establishes style for all 'img' elements within sections with the 'benefit' class. 
+This sets their rendering to their own blocks, gives a margin above and below, and sets 
+their maximum possible width for the scaled image. */
 .benefit img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.solutions {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.solutions img {
-    max-height: 200px;
-}
-
-.solutions h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* This establishes for the 'footer' class which has been attached to the 'footer' element.
+This sets padding for the bottom bar, ensures all content will end before the bar begins using 'clear',
+sets the font family and aligns text to center. */
 .footer {
     padding: 30px;
     clear: both;
@@ -123,6 +173,8 @@ p {
     text-align: center;
 }
 
+/* This establishes style for all 'h2' elements within sections with the 'footer' class. 
+This sets a new font size for the heading.*/
 .footer h2 {
     font-size: 20px;
 }

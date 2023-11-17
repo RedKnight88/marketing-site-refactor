@@ -1,13 +1,24 @@
+<!-- This is the initialization of the webpage. 
+    It indicates to the browser that this is an html file, 
+    and what language it will operate under. -->
 <!DOCTYPE html>
 <html lang="en-us">
 
+<!-- This is the head of the document. It contains the meta-data of the webpage, 
+    including a reference to a universal character set, 
+    a reference to the styling sheet for the page, and a name for the webpage. -->
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Horiseon Marketing Solutions</title>
 </head>
 
+<!-- This begins the content displayed on the webpage. Everything in the body will be rendered. -->
 <body>
+
+    <!-- This is the top of the page, navigation bar container. 
+        It contains two elements, a heading for the company name 
+        and an unordered list of links to jump to different content within the webpage. -->
     <header>
         <h1 class="heading name">Horiseon</h1>
         <ul class="heading">
@@ -22,9 +33,14 @@
             </li>
         </ul>
     </header>
-    
-    <figure class="banner" alt="a large image separates the header from the content of the page. it depicts a man with an unbuttoned striped shirt standing at the table of a meeting. to his right, a man and a woman look at the papers the first man is pointing to. in the foreground, a man is grabbing ont of the papers. there are tall, cylindrical glasses of water for each person at the table, each mostly full. in the background, a whiteboard hung on a wall of wood with varying depths that ends on the left with a window."></figure>
 
+    <!-- This is the main image of the webpage, a buffer between the top bar and the main content. -->
+    <figure class="banner" alt="a large image separates the header from the content of the page. it depicts a man with an unbuttoned striped shirt standing at the table of a meeting. to his right, a man and a woman look at the papers the first man is pointing to. in the foreground, a man is grabbing ont of the papers. there are tall, cylindrical glasses of water for each person at the table, each mostly full. in the background, a whiteboard hung on a wall of wood with varying depths that ends on the left with a window."></figure>
+    
+    <!-- This is the main content of the page, where it describes the company's different 
+        strategies for businesses. Each subsection contains a different offering with a 
+        heading title, a description paragraph, and an image for visual aid. This section also
+        contains id's for each section, for the purpose of becoming a reference for the links in the nav bar.-->
     <main class="solutions-column">
         <section id="search-engine-optimization" class="solutions">
             <img src="./assets/images/search-engine-optimization.jpg" alt="an image of a deskspace with a cup of multicolored pens and pencils, a laptop keyboard, a cup of coffee, and a notebook with a sketch of an SEO thought bubble" class="float-left" />
@@ -48,7 +64,11 @@
             </p>
         </section>
     </main>
-
+    
+    <!-- This is a sidebar of content for the webpage, 
+        describing the benefits of utilizing Horiseon's offerings. 
+        Each subsection contains a different benefit, with a heading title,
+         a description paragraph, and an image for visual aid. -->
     <aside class="benefits-column">
         <section class="benefit">
             <h3>Lead Generation</h3>
@@ -72,7 +92,9 @@
             </p>
         </section>
     </aside>
-
+    
+    <!-- This is a footer for the webpage, with a message from the company and
+    listing the company's official name and status. -->
     <footer class="footer">
         <h2>Made with ❤️️ by Horiseon</h2>
         <p>
